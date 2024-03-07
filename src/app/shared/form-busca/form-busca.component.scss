@@ -1,0 +1,28 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    background: #FEF7FF;
+    border: 1px solid #CAC4D0;
+    border-radius: 12px;
+    padding: 24px;
+    gap: 30px;
+}
+
+.first-line{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.second-line{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button{
+    border: none;
+}
+
+.input-container {
+    margin-bottom: -1.25em;
+  }

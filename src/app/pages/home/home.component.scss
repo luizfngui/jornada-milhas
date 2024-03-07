@@ -1,0 +1,23 @@
+.cards-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.card-promocoes{
+    width: 30%;
+}
+
+.depoimentos-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-depoimento{
+    width: 30%;
+    margin: 10px;
+}
+
+h1{
+    margin: 10px;
+}

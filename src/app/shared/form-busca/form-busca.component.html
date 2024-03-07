@@ -1,0 +1,37 @@
+<section class="form-busca">
+    <h1>Passagens</h1>
+    <form class="form">
+        <div class="first-line">
+            <mat-button-toggle-group aria-label="Favorite Color">
+                <mat-button-toggle>
+                    <mat-icon fontIcon="check"></mat-icon>
+                    IDA E VOLTA
+                </mat-button-toggle>
+                <mat-button-toggle>
+                    SOMENTE IDA
+                </mat-button-toggle>
+            </mat-button-toggle-group>
+            <mat-chip-listbox aria-label="Fish selection">
+                <mat-chip-option selected>1 passageiro</mat-chip-option>
+                <mat-chip-option>Econômica</mat-chip-option>
+            </mat-chip-listbox>
+        </div>
+        <div class="second-line">
+            <mat-form-field class="input-container" appearance="outline">
+                <mat-icon matPrefix>flight_takeoff</mat-icon>
+                <mat-label>Origem</mat-label>
+                <input matInput>
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                <mat-icon>sync_alt</mat-icon>
+            </button>
+            <mat-form-field class="input-container" appearance="outline">
+                <mat-icon matPrefix>flight_land</mat-icon>
+                <mat-label>Destino</mat-label>
+                <input matInput>
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </div>
+    </form>
+</section>
