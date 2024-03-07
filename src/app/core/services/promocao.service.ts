@@ -15,7 +15,7 @@ export class PromocaoService {
 
   private apiUrl : string = environment.apiUrl
 
-  list() : Observable<Promocao[]>{
+  listarPromocoes() : Observable<Promocao[]>{
     return this.httpClient.get<Promocao[]>(`${this.apiUrl}/promocoes`);
   }
 }

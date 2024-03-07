@@ -24,12 +24,10 @@ export class PromocoesComponent implements OnInit {
   constructor( private servicePromocao : PromocaoService){
 
   }
-  
-  private apiUrl = environment.apiUrl;
 
   
   ngOnInit(): void {
-    this.servicePromocao.list().subscribe(res=> this.promocoes= res)
+    this.servicePromocao.listarPromocoes().subscribe(res=> this.promocoes= res)
   }
 
 }

@@ -1,10 +1,9 @@
 <mat-card class="example-card">
   <mat-card-content class="content">
-    <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+    <img mat-card-sm-image src="{{ depoimento.avatar }}" >
     <div class="text-content">
-        <p>Ahh, achei muito legalzinho, olha que legal! foi legal demais, muito legal mesmo, mas só faltou ser chato, pq foi muito legal!</p>
-        <h3>Luizinho</h3>
+        <p>{{depoimento.texto}}</p>
+        <h3>{{depoimento.autor}}</h3>
     </div>
 </mat-card-content>
-  
 </mat-card>

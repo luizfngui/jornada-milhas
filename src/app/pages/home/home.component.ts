@@ -9,6 +9,7 @@ import { PromocaoService } from '../../core/services/promocao.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PromocoesComponent } from './promocoes/promocoes.component';
 import { CardBuscaComponent } from './card-busca/card-busca.component';
+import { DepoimentosComponent } from './depoimentos/depoimentos.component';
 
 @Component({
   selector: 'app-home',
@@ -22,7 +23,8 @@ import { CardBuscaComponent } from './card-busca/card-busca.component';
     FormBuscaComponent,
     HttpClientModule,
     PromocoesComponent,
-    CardBuscaComponent
+    CardBuscaComponent,
+    DepoimentosComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
@@ -32,8 +34,6 @@ export class HomeComponent implements OnInit {
     
   }
   ngOnInit(): void {
-    this.servicePromocao.list().subscribe(
-      res => {console.log(res)}
-    );
+    
   }
 }
